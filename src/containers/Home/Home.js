@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
+import Contact from "./Contact/Contact";
 
 const Home = () => {
 	return (
@@ -9,9 +10,16 @@ const Home = () => {
 			<div className=''>
 				<Header></Header>
 				<div>
-					<Hero></Hero>
+					<div className='bg-brand-1 w-screen'>
+						<div className='container mx-auto '>
+							<Hero></Hero>
+						</div>
+					</div>
 					<div className='mt-40'>
 						<h1>This is Home</h1>
+					</div>
+					<div>
+						<Contact></Contact>
 					</div>
 				</div>
 			</div>

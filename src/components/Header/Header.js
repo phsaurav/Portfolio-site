@@ -37,14 +37,14 @@ const Header = () => {
 									{" "}
 									<NavLink
 										to='/login'
-										className='cursor-default  text-black px-8 py-1 transition duration-300 ease-in-out hover:bg-brand-1 hover:text-white bg-white uppercase border-2 shadow-xl border-black mb-2'
+										className='cursor-default  text-brand-3 md:px-8  py-2 px-6 transition duration-300 ease-in-out hover:bg-brand-4 hover:text-white bg-brand-white uppercase border-2 md:border-2 shadow-xl border-brand-3 mb-2 mr-28'
 										activeStyle={{
 											backgroundColor: "#FFFFFF",
 											color: "#1e1e1e",
 											width: "full",
 										}}
 									>
-										Sign In
+										Contact
 									</NavLink>
 								</div>
 							</div>
