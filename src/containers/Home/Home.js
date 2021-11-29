@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import Contact from "./Contact/Contact";
+import TopProjects from "./TopProjects/TopProjects";
 
 const Home = () => {
 	return (
@@ -16,7 +17,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className='mt-40'>
-						<h1>This is Home</h1>
+						<TopProjects></TopProjects>
 					</div>
 					<div>
 						<Contact></Contact>

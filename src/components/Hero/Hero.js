@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 	return (
@@ -18,12 +18,12 @@ const Hero = () => {
 							</div>
 							<div>
 								<div>
-									<HashLink
-										to='home#services'
+									<a
+										href='https://drive.google.com/file/d/1T87zJ53ZNfs8aAyadJT9LCabVU8SBLXy/view?usp=sharings'
 										className='cursor-default  text-brand-3 md:px-8 md:py-3 py-2 px-6 transition duration-300 ease-in-out hover:bg-brand-4 hover:text-white bg-brand-white uppercase border-2 md:border-2 shadow-xl border-brand-3 mb-2 mt-10'
 									>
 										Resume Download
-									</HashLink>
+									</a>
 								</div>
 							</div>
 						</div>
