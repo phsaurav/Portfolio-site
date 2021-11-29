@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Contact = () => {
 	return (
 		<div>
-			<div className='relative caontainer flex items-top justify-center pb-10 bg-white dark:bg-gray-900 sm:items-center sm:pt-0 text-left mt-20'>
+			<div className='relative conatiner pb-10 bg-white dark:bg-gray-900 sm:items-center sm:pt-0 text-left mt-20 '>
 				<div className='max-w-screen mx-auto sm:px-6 lg:px-8 '>
 					<div className='mt-4 overflow-hidden'>
 						<div className='grid grid-cols-1 md:grid-cols-2 w-full'>
