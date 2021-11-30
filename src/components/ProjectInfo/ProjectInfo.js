@@ -41,7 +41,7 @@ const ProjectInfo = () => {
 					<div className=' bg-brand-5 h-px w-20 mb-10 mt-3 '></div>
 				</div>
 				<div className='cursor-default '>
-					<div className='h-full w-full mx-auto bg-brand-1'>
+					<div className='h-full w-full mx-auto bg-brand-3 py-10'>
 						<Carousel
 							swipeable={true}
 							draggable={true}
