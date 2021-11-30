@@ -33,7 +33,7 @@ const Header = () => {
 									All Projects
 								</NavLink>
 								<NavLink
-									to='/about'
+									to='/aboutme'
 									className='font-base text-black  pb-2 link link-underline link-underline-black'
 									style={({ isActive }) => (isActive ? activeStyle : undefined)}
 								>
