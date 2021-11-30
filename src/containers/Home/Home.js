@@ -11,15 +11,15 @@ const Home = () => {
 			<div className=''>
 				<Header></Header>
 				<div>
-					<div className='bg-brand-1 w-screen'>
+					<div className='bg-brand-1 max-w-screen'>
 						<div className='container mx-auto '>
 							<Hero></Hero>
 						</div>
 					</div>
-					<div className='mt-40'>
+					<div className='mt-64'>
 						<TopProjects></TopProjects>
 					</div>
-					<div>
+					<div className='mt-40'>
 						<Contact></Contact>
 					</div>
 				</div>
