@@ -36,7 +36,7 @@ const Hero = () => {
 							</div>
 							<div>
 								<div>
-									<a href='https://drive.google.com/file/d/1T87zJ53ZNfs8aAyadJT9LCabVU8SBLXy/view?usp=sharings'>
+									<a href='https://drive.google.com/file/d/1mQLqgKwOP9l6D0IpCSniUWYWAGvlYt94/view?usp=sharing'>
 										<div className='cursor-default  text-brand-3 md:px-8  py-3 px-6 w-60 text-center hover:bg-brand-4 hover:text-white bg-brand-white uppercase border-2 md:border-2 shadow-xl border-brand-3 mb-10 mr-28 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-xl'>
 											Resume Download
 										</div>
