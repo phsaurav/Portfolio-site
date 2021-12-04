@@ -44,7 +44,8 @@ const Header = () => {
 								<div className='hidden md:flex justify-center items-center h-24'>
 									{" "}
 									<HashLink
-										to='#contact'
+										smooth
+										to='/home#contact'
 										className='cursor-default  text-brand-3 md:px-8  py-2 px-6 hover:bg-brand-4 hover:text-white bg-brand-white uppercase border-2 md:border-2 shadow-xl border-brand-3 mb-2 mr-28 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-xl'
 									>
 										Contact

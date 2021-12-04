@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 const Contact = () => {
 	return (
 		<div>
-			<div className='relative mx-auto mt-20 text-left container flex items-top justify-center pb-20 bg-white dark:bg-gray-900 sm:items-center sm:pt-0 '>
+			<div
+				id='contact'
+				className='relative mx-auto mt-20 text-left container flex items-top justify-center pb-20 bg-white dark:bg-gray-900 sm:items-center sm:pt-0 '
+			>
 				<div className='max-w-screen mx-auto sm:px-6 lg:px-8 '>
 					<div className='mt-4 overflow-hidden'>
 						<div className='grid grid-cols-1 md:grid-cols-2 w-full'>
 							<div className='p-6 mr-2 bg-gray-100 dark:bg-gray-800'>
-								<h1
-									id='contact'
-									className='text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight'
-								>
+								<h1 className='text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight'>
 									Get in touch
 								</h1>
 								<p className='text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2'>
