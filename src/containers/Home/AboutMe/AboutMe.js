@@ -12,7 +12,7 @@ const AboutMe = () => {
 					<div className='grid grid-cols-1 md:grid-cols-2'>
 						<div className=''>
 							<img
-								className=' object-cover object-top h-screen'
+								className=' object-cover object-top h-96 md:h-screen mt-16 md:mt-0'
 								src='https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
 								alt=''
 							/>
@@ -20,9 +20,11 @@ const AboutMe = () => {
 						<div className='flex bg-white p-10 justify-center'>
 							<div className='mb-auto mt-auto max-w-xl '>
 								<div className=' border-b-4 border-brand-5 pb-5'>
-									<h1 className='text-6xl font-semibold text-brand-4 uppercase '>PH Saurav</h1>
+									<h1 className='lg:text-6xl text-5xl font-semibold text-brand-4 uppercase '>
+										PH Saurav
+									</h1>
 									<div
-										className='text-2xl text-brand-5 font-semibold xl:mb-0'
+										className='md:text-2xl text-xl text-brand-5 font-semibold xl:mb-0'
 										style={{ fontFamily: "'Cutive Mono', monospace" }}
 									>
 										<Typical
@@ -38,7 +40,7 @@ const AboutMe = () => {
 										/>
 									</div>
 								</div>
-								<p className='font-light text-xl text-brand-5 mt-5'>
+								<p className='font-light md:text-xl text-lg  text-brand-5 mt-5 mx-6 md: mx-0'>
 									I am a MERN stack developer with an extensive history of designing who loves
 									developing high-quality products. I mainly focused on front-end development and have
 									a working knowledge of building React websites and web applications. Also have

@@ -6,7 +6,9 @@ const TopProjects = () => {
 	const [projects] = useProjects();
 	return (
 		<div>
-			<h1 className='mt-10 mb-2 text-3xl font-light text-brand-3 uppercase'>Some of my latest work</h1>
+			<h1 className='mt-10 mb-2 md:text-3xl text-2xl font-light text-brand-3 uppercase'>
+				Some of my latest work
+			</h1>
 			<div className='flex justify-center'>
 				<div className=' bg-brand-3 h-px w-20 mb-10'></div>
 			</div>

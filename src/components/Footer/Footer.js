@@ -4,14 +4,14 @@ const Footer = () => {
 	return (
 		<div className=''>
 			<footer>
-				<div className='bg-blue-40 relative top-100 w-full h-full '>
+				<div className=' bg-blue-40 relative top-100 w-full h-full mb-5 md: mb-0'>
 					<div className='container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row'>
-						<p className='text-white text-sm text-center sm:text-left'>
-							© 2021 Dev —
+						<p className='text-gray-600 text-sm text-center sm:text-left'>
+							© 2021 Dev —{" "}
 							<a
 								href='https://www.facebook.com/phsaurav/'
 								rel='noopener noreferrer'
-								className='text-gray-800 ml-1 '
+								className='text-gray-900 lg:ml-1 '
 								target='_blank'
 							>
 								@PH_Saurav

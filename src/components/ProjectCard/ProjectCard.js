@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
 	return (
 		<div>
 			<Link to={`/project/${key}`}>
-				<div className='container mx-auto overflow-hidden shadow-lg my-2 bg-white w-96 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:shadow-xl'>
+				<div className='container mx-auto overflow-hidden shadow-lg my-2 bg-white md:w-96 w-80  transition duration-500 ease-in-out transform hover:-translate-y-3 hover:shadow-xl'>
 					<div
 						className='relative z-10'
 						style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw))" }}

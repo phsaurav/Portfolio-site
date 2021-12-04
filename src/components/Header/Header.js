@@ -135,6 +135,18 @@ const Header = () => {
 								>
 									All Projects
 								</NavLink>
+								<NavLink
+									to='/aboutme'
+									className='font-semibold text-brand-2 hover:bg-white hover:text-brand-2 block px-3  text-base w-full border-b border-brand-2 py-3'
+									activeStyle={{
+										backgroundColor: "#FFFFFF",
+										color: "#000000",
+										fontWeight: "600",
+										backgroundSize: "100% 0px",
+									}}
+								>
+									About Me
+								</NavLink>
 							</div>
 						</div>
 					)}

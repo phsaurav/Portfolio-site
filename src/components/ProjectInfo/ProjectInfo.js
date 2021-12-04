@@ -43,7 +43,7 @@ const ProjectInfo = () => {
 					<div className=' bg-brand-5 h-px w-20 mb-10 mt-3 '></div>
 				</div>
 				<div className='cursor-default '>
-					<div className='h-full w-full mx-auto bg-white border-t-2 border-b-2 border-brand-3'>
+					<div className='md:h-full w-full mx-auto bg-white border-t-2 border-b-2 border-brand-3'>
 						<Carousel
 							swipeable={true}
 							draggable={true}
@@ -55,7 +55,7 @@ const ProjectInfo = () => {
 							removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
 						>
 							{images.map((image) => (
-								<div className=' flex justify-center mx-auto' style={{ height: "600px" }}>
+								<div className=' flex justify-center mx-auto md:h-xl h-full '>
 									<img className='object-contain' src={image} alt='' />
 								</div>
 							))}
@@ -87,7 +87,7 @@ const ProjectInfo = () => {
 				<div className='w-10/12 md:w-7/12 lg:6/12 mx-auto relative py-5'>
 					<div className='border-l-2 mt-10'>
 						<div className='transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-2 border-4 border-brand-4 text-brand-4 font-light rounded flex-col md:flex-row space-y-4 md:space-y-0'>
-							<div className='w-5 h-5 bg-brand-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0'></div>
+							<div className='w-5 h-5 bg-brand-4 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0 '></div>
 
 							<div className='w-10 h-1 bg-brand-5 absolute -left-10 z-0'></div>
 

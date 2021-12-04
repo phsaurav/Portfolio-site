@@ -18,7 +18,7 @@ const Hero = () => {
 									PH Saurav
 								</span>
 								<div
-									className='text-3xl text-brand-5 font-semibold -mb-5 xl:mb-0'
+									className='lg:text-3xl text-lg text-brand-5 font-semibold -mb-5 xl:mb-0'
 									style={{ fontFamily: "'Cutive Mono', monospace" }}
 								>
 									<Typical
@@ -37,7 +37,7 @@ const Hero = () => {
 							<div>
 								<div>
 									<a href='https://drive.google.com/file/d/1mQLqgKwOP9l6D0IpCSniUWYWAGvlYt94/view?usp=sharing'>
-										<div className='cursor-default  text-brand-3 md:px-8  py-3 px-6 w-60 text-center hover:bg-brand-4 hover:text-white bg-brand-white uppercase border-2 md:border-2 shadow-xl border-brand-3 mb-10 mr-28 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-xl'>
+										<div className='cursor-default  text-brand-3 md:px-8 py-2  md:py-3 md:px-6 md:w-60 w-52 text-center hover:bg-brand-4 hover:text-white bg-brand-white uppercase border-2 md:border-2 shadow-xl border-brand-3 lg:mb-10 mr-28 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-xl'>
 											Resume Download
 										</div>
 									</a>
@@ -47,7 +47,7 @@ const Hero = () => {
 					</div>
 					<div className=' md:w-1/2'>
 						<img
-							className='xl:-mb-40 lg:-mb-36 -mb-20 mt-24 -ml-1 lg:mt-0 lg:ml-0 w-full pt-5'
+							className='xl:-mb-40 lg:-mb-36 -mb-20 mt-16 lg:mt-24 -ml-5 lg:mt-0 lg:ml-0 w-full pt-5'
 							src='/assets/banner_pic.png'
 							alt=''
 						></img>

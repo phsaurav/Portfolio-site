@@ -8,6 +8,12 @@ module.exports = {
 			wider: ".05em",
 			widest: ".5em",
 		},
+		height: {
+			sm: "8px",
+			md: "16px",
+			lg: "24px",
+			xl: "600px",
+		},
 		screens: {
 			sm: "480px",
 			md: "1024px",
