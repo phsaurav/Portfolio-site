@@ -15,7 +15,7 @@ const AllProjects = () => {
 						Some of my latest work
 					</h1>
 					<div className='flex justify-center'>
-						<div className=' bg-brand-3 h-px w-20 mb-10'></div>
+						<div className='border-brand-3 h-px w-20 mb-10 border-b'></div>
 					</div>
 					<div className='flex justify-center items-center container mx-auto gap-20 lg:gap-20 flex-wrap'>
 						{projects.map((project) => (
