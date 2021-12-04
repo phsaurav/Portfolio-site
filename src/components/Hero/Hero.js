@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Typical from "react-typical";
 
 const Hero = () => {
@@ -46,11 +47,13 @@ const Hero = () => {
 						</div>
 					</div>
 					<div className=' md:w-1/2'>
-						<img
-							className='xl:-mb-40 lg:-mb-36 -mb-20 mt-16 lg:mt-24 -ml-5 lg:mt-0 lg:ml-0 w-full pt-5'
-							src='/assets/banner_pic.png'
-							alt=''
-						></img>
+						<Link to='/aboutme'>
+							<img
+								className='xl:-mb-40 lg:-mb-36 -mb-20 mt-16 lg:mt-24 -ml-5 lg:mt-0 lg:ml-0 w-full pt-5 transition duration-500 ease-in-out transform hover:-translate-y-6'
+								src='/assets/banner_pic.png'
+								alt=''
+							></img>
+						</Link>
 					</div>
 				</div>
 			</div>
