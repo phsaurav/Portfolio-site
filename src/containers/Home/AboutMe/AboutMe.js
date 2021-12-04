@@ -12,7 +12,7 @@ const AboutMe = () => {
 					<div className='grid grid-cols-1 md:grid-cols-2'>
 						<div className=''>
 							<img
-								className=' object-cover object-top h-96 md:h-screen mt-16 md:mt-0'
+								className=' object-cover object-top h-96 md:min-h-screen'
 								src='https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
 								alt=''
 							/>
