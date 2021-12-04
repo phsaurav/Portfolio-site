@@ -12,7 +12,7 @@ const Header = () => {
 		pointerEvents: "none",
 	};
 	return (
-		<div className='bg-brand-1 '>
+		<div className='bg-brand-1 pt-5'>
 			<nav className='relative z-20'>
 				<div className='container mx-auto'>
 					<div className='text-black'>
