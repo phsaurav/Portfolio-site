@@ -33,6 +33,13 @@ const Header = () => {
 									All Projects
 								</NavLink>
 								<NavLink
+									to='/blogs'
+									className='font-base text-black  pb-2 link link-underline link-underline-black'
+									style={({ isActive }) => (isActive ? activeStyle : undefined)}
+								>
+									Blogs
+								</NavLink>
+								<NavLink
 									to='/aboutme'
 									className='font-base text-black  pb-2 link link-underline link-underline-black'
 									style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -135,6 +142,18 @@ const Header = () => {
 									}}
 								>
 									All Projects
+								</NavLink>
+								<NavLink
+									to='/blogs'
+									className='font-semibold text-brand-2 hover:bg-white hover:text-brand-2 block px-3  text-base w-full border-b border-brand-2 py-3'
+									activeStyle={{
+										backgroundColor: "#FFFFFF",
+										color: "#000000",
+										fontWeight: "600",
+										backgroundSize: "100% 0px",
+									}}
+								>
+									Blogs
 								</NavLink>
 								<NavLink
 									to='/aboutme'
