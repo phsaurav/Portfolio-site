@@ -1,4 +1,5 @@
 import React from "react";
+import Iframe from "react-iframe";
 import { BiUserCircle } from "react-icons/bi";
 import { Link, useParams } from "react-router-dom";
 import useBlogs from "../../../hooks/useBlogs";
@@ -15,7 +16,7 @@ const Blog = () => {
 						<div className='flex items-center justify-between'>
 							<span className='font-light text-gray-600'>{selectedBlog[0].date}</span>
 
-							<p className='px-2 py-1 font-semibold text-gray-100 bg-brand-1 rounded hover:bg-brand-3 text-sm'>
+							<p className='px-2 py-1 font-semibold text-gray-100 bg-brand-3 rounded hover:bg-brand-3 text-sm'>
 								{selectedBlog[0].topic}
 							</p>
 						</div>
@@ -26,16 +27,16 @@ const Blog = () => {
 								className='my-10 rounded-lg'
 							/>
 
-							<p className='text-2xl font-bold text-gray-700 hover:underline'>
+							<p className='text-2xl font-bold text-gray-700 hover:underline mb-10'>
 								{selectedBlog[0].title}
 							</p>
 
-							<p className='mt-2 text-gray-600'>{selectedBlog[0].description}</p>
+							<Iframe url={selectedBlog[0].description} className='w-full' height='1400px'></Iframe>
 						</div>
 						<div className='flex items-center justify-between mt-4'>
 							<Link
 								to={`/blogs`}
-								className='  bg-blue-20 hover:bg-blue-30 text-white px-4 py-1 rounded-lg'
+								className='  bg-brand-4 hover:bg-blue-30 text-white px-4 py-1 rounded-lg'
 							>
 								Go Back
 							</Link>
