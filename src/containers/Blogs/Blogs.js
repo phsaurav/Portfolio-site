@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
@@ -8,11 +9,10 @@ const Blogs = () => {
 			<div>
 				<Header></Header>
 				<div>
-					<h1 className='mt-10 mb-2 md:text-5xl text-2xl font-light text-brand-3 uppercase'>
-						Blogs Coming Soon
-					</h1>
-					<div className='flex justify-center'>
-						<div className='border-brand-3 h-px w-20 mb-10 border-b'></div>
+					<div className='px-6 py-8 bg-blue-10 min-h-screen'>
+						<div className='container flex justify-between mx-auto'>
+							<Outlet />
+						</div>
 					</div>
 				</div>
 			</div>
