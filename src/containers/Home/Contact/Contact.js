@@ -5,6 +5,7 @@ const Contact = () => {
 	return (
 		<div>
 			<div
+				data-aos='zoom-in-up'
 				id='contact'
 				className='relative mx-auto mt-20 text-left container flex items-top justify-center pb-20 bg-white dark:bg-gray-900 sm:items-center sm:pt-0 '
 			>

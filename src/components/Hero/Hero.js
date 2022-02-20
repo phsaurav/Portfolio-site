@@ -39,7 +39,7 @@ const Hero = () => {
 							</div>
 							<div>
 								<div>
-									<a href='https://drive.google.com/file/d/1dsGAvCMeKat47qhv6_SyU5QukYws4ogj/view?usp=sharing'>
+									<a href='https://drive.google.com/file/d/1RQxxIjKRjagQHb2WFkHltoYA9bWTm3xB/view?usp=sharing'>
 										<div className='cursor-default  text-brand-3 py-2  md:py-3 md:px-6 md:w-60 w-52 text-center hover:bg-brand-4 hover:text-white bg-brand-white uppercase border-2 md:border-2 shadow-xl border-brand-3 lg:mb-10 mr-28 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-xl'>
 											Resume Download
 										</div>
@@ -51,6 +51,7 @@ const Hero = () => {
 					<div className=' md:w-1/2'>
 						<Link to='/aboutme'>
 							<img
+								data-aos='zoom-in-down'
 								className='xl:-mb-40 lg:-mb-36 -mb-20 mt-16 -ml-5 lg:mt-0 lg:ml-0 w-full pt-5 transition duration-500 ease-in-out transform hover:-translate-y-6'
 								src='/assets/banner_pic.png'
 								alt=''

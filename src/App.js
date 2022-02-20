@@ -1,4 +1,6 @@
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import AllProjects from "./containers/AllProjects/AllProjects";
@@ -7,8 +9,12 @@ import AboutMe from "./containers/Home/AboutMe/AboutMe";
 import Blogs from "./containers/Blogs/Blogs";
 import Blog from "./containers/Blogs/Blog/Blog";
 import AllBlog from "./containers/Blogs/AllBlog/AllBlog";
+import { useEffect } from "react";
 
 function App() {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<div className='App'>
 			<Router>

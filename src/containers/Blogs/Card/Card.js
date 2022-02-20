@@ -6,7 +6,7 @@ const Card = ({ blog }) => {
 	const { key, title, intro, date, user, topic, img } = blog;
 	return (
 		<div>
-			<div className='mt-10'>
+			<div className='mt-10' data-aos='fade-up'>
 				<div className='max-w-4xl px-10 py-6 mx-auto bg-white shadow-lg'>
 					<div className='flex items-center justify-between'>
 						<span className='font-light text-gray-600'>{date}</span>

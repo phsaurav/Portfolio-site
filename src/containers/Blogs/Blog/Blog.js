@@ -9,7 +9,7 @@ const Blog = () => {
 	const { key } = useParams();
 	const selectedBlog = blogs.filter((service) => service.key === key);
 	return (
-		<div>
+		<div >
 			{selectedBlog[0] && (
 				<div className='mt-10'>
 					<div className='max-w-4xl px-10 py-6 mx-auto bg-white shadow-md'>
