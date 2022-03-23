@@ -14,7 +14,7 @@ const TopProjects = () => {
 			</div>
 			<div className='flex justify-center items-center container mx-auto gap-20 lg:gap-20 flex-wrap'>
 				{projects.slice(0, 3).map((project) => (
-					<ProjectCard key={project.key} project={project}></ProjectCard>
+					<ProjectCard key={project.id} project={project}></ProjectCard>
 				))}
 			</div>
 		</div>

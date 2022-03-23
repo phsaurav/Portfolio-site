@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
-	const { key, title, subtitle, img1 } = project;
+	const { id, title, subtitle, img1 } = project;
 	return (
 		<div data-aos='zoom-in'>
-			<Link to={`/project/${key}`}>
+			<Link to={`/project/${id}`}>
 				<div className='container mx-auto overflow-hidden shadow-lg my-2 bg-white md:w-96 w-80  transition duration-500 ease-in-out transform hover:-translate-y-3 hover:shadow-xl'>
 					<div
 						className='relative z-10'
