@@ -100,7 +100,7 @@ const AboutMe = () => {
 										in UI/UX specialization.
 									</p>
 									<div className='flex justify-center'>
-										<a href='https://drive.google.com/file/d/1RQxxIjKRjagQHb2WFkHltoYA9bWTm3xB/view?usp=sharing'>
+										<a href='https://drive.google.com/file/d/12rjVPlolM8osYfwaFHBLCfc9PJH11X9y/view?usp=sharing'>
 											<div className='text-brand-3  hover:bg-brand-4 bg-brand-white  border-brand-3 mt-10 ml-28 mb-10 mr-28 w-60 transform cursor-default border-2 py-2 px-6 text-center uppercase shadow-xl transition duration-500 ease-in-out hover:-translate-y-2 hover:text-white hover:shadow-xl md:border-2 md:px-6 '>
 												Resume Download
 											</div>
