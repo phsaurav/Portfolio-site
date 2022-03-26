@@ -4,7 +4,7 @@ const useProjects = () => {
 	const [projects, setProjects] = useState([]);
 
 	useEffect(() => {
-		fetch("/projects.json")
+		fetch("https://ph-portfolio-api.herokuapp.com/api/projects/")
 			.then((res) => res.json())
 			.then((data) => {
 				console.log(data);

@@ -13,7 +13,7 @@ const ProjectInfo = () => {
 	const [projects] = useProjects();
 	console.log(id);
 
-	const selectedProject = projects.filter((project) => project.id === id);
+	const selectedProject = projects.filter((project) => String(project.id) === id);
 	const images = [selectedProject[0]?.img1, selectedProject[0]?.img2, selectedProject[0]?.img3];
 
 	const responsive = {
