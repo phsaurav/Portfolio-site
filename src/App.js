@@ -25,7 +25,7 @@ function App() {
 					<Route path='/aboutme' element={<AboutMe></AboutMe>}></Route>
 					<Route path='/blogs' element={<Blogs></Blogs>}>
 						<Route path='/blogs' element={<AllBlog />} />
-						<Route path=':id' element={<Blog />} />
+						<Route path=':key' element={<Blog />} />
 					</Route>
 					<Route path='/project/:id' element={<ProjectInfo></ProjectInfo>}></Route>
 				</Routes>

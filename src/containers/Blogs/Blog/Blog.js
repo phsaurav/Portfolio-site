@@ -7,7 +7,8 @@ import useBlogs from "../../../hooks/useBlogs";
 const Blog = () => {
 	const [blogs] = useBlogs();
 	const { key } = useParams();
-	const selectedBlog = blogs.filter((service) => service.key === key);
+	const selectedBlog = blogs.filter((service) => String(service.key) === key);
+	console.log(key);
 	return (
 		<div >
 			{selectedBlog[0] && (
