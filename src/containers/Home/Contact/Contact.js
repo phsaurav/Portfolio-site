@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
 	const form = useRef();
@@ -9,11 +11,27 @@ const Contact = () => {
 
 		emailjs.sendForm("phsaurav", "template_3tn6n5v", form.current, "rHPn86XqXxoASG1sA").then(
 			(result) => {
-				console.log(result.text);
+				toast.success("Message Sent!", {
+					position: "top-center",
+					autoClose: 5000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+				});
 				e.target.reset();
 			},
 			(error) => {
-				console.log(error.text);
+				toast.error("Error: " + error.text, {
+					position: "top-center",
+					autoClose: 5000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+				});
 			}
 		);
 	};
@@ -118,6 +136,7 @@ const Contact = () => {
 										id='name'
 										placeholder='Full Name'
 										className='w-100 mt-2 border border-gray-400  bg-white py-3 px-3 font-semibold text-gray-800 focus:border-indigo-500 focus:outline-none dark:border-gray-700 dark:bg-gray-800'
+										required
 									/>
 								</div>
 
@@ -131,6 +150,7 @@ const Contact = () => {
 										id='email'
 										placeholder='Email'
 										className='w-100 mt-2 border border-gray-400  bg-white py-3 px-3 font-semibold text-gray-800 focus:border-indigo-500 focus:outline-none dark:border-gray-700 dark:bg-gray-800'
+										required
 									/>
 								</div>
 
@@ -143,12 +163,13 @@ const Contact = () => {
 										id='tel'
 										placeholder='Message'
 										className='w-100 mt-2 border border-gray-400  bg-white py-3 px-3 font-semibold text-gray-800 focus:border-indigo-500 focus:outline-none dark:border-gray-700 dark:bg-gray-800'
+										required
 									></textarea>
 								</div>
 								<button
 									type='submit'
 									value='Send'
-									className='bg-brand-4 hover:bg-blue-dark hover:bg-brand-3 mt-3 rounded-lg py-3 px-6 font-bold text-white transition duration-300 ease-in-out md:w-32'
+									className='bg-brand-4 hover:bg-blue-dark hover:text-brand-4 hover:border-brand-2 mt-3 rounded-sm border-2 py-3 px-6 font-bold text-white transition duration-300 ease-in-out hover:bg-white md:w-32'
 								>
 									Submit
 								</button>
@@ -157,6 +178,18 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
+			<ToastContainer
+				position='top-center'
+				autoClose={5000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				className='fixed top-0'
+			/>
 		</div>
 	);
 };
