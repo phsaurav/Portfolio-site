@@ -1,8 +1,23 @@
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
 	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs.sendForm("phsaurav", "template_3tn6n5v", form.current, "rHPn86XqXxoASG1sA").then(
+			(result) => {
+				console.log(result.text);
+				e.target.reset();
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+	};
+
 	return (
 		<div>
 			<div
@@ -92,14 +107,14 @@ const Contact = () => {
 								</div>
 							</div>
 
-							<form ref={form} className='flex flex-col justify-center p-6'>
+							<form ref={form} onSubmit={sendEmail} className='flex flex-col justify-center p-6'>
 								<div className='flex flex-col'>
 									<label htmlFor='name' className='hidden'>
 										Full Name
 									</label>
 									<input
-										type='name'
-										name='name'
+										type='text'
+										name='user_name'
 										id='name'
 										placeholder='Full Name'
 										className='w-100 mt-2 border border-gray-400  bg-white py-3 px-3 font-semibold text-gray-800 focus:border-indigo-500 focus:outline-none dark:border-gray-700 dark:bg-gray-800'
@@ -112,7 +127,7 @@ const Contact = () => {
 									</label>
 									<input
 										type='email'
-										name='email'
+										name='user_email'
 										id='email'
 										placeholder='Email'
 										className='w-100 mt-2 border border-gray-400  bg-white py-3 px-3 font-semibold text-gray-800 focus:border-indigo-500 focus:outline-none dark:border-gray-700 dark:bg-gray-800'
@@ -124,21 +139,19 @@ const Contact = () => {
 										Message
 									</label>
 									<textarea
-										name='tel'
+										name='message'
 										id='tel'
 										placeholder='Message'
 										className='w-100 mt-2 border border-gray-400  bg-white py-3 px-3 font-semibold text-gray-800 focus:border-indigo-500 focus:outline-none dark:border-gray-700 dark:bg-gray-800'
 									></textarea>
 								</div>
-
-								<Link to='/home'>
-									<button
-										type='submit'
-										className='bg-brand-4 hover:bg-blue-dark hover:bg-brand-3 mt-3 rounded-lg py-3 px-6 font-bold text-white transition duration-300 ease-in-out md:w-32'
-									>
-										Submit
-									</button>
-								</Link>
+								<button
+									type='submit'
+									value='Send'
+									className='bg-brand-4 hover:bg-blue-dark hover:bg-brand-3 mt-3 rounded-lg py-3 px-6 font-bold text-white transition duration-300 ease-in-out md:w-32'
+								>
+									Submit
+								</button>
 							</form>
 						</div>
 					</div>
