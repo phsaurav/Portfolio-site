@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 import { HashLink } from "react-router-hash-link";
+import "./Header.css";
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -12,59 +13,59 @@ const Header = () => {
 		pointerEvents: "none",
 	};
 	return (
-		<div className='bg-brand-1 md:pt-5 md:pb-3 pb-16 pt-5'>
+		<div className='bg-brand-1 pb-16 pt-5 md:pt-5 md:pb-3'>
 			<nav className='relative z-20'>
 				<div className='container mx-auto'>
 					<div className='text-black'>
-						<div className='flex ml-5 md:ml-0 items-center justify-between pl-10'>
-							<div className='hidden md:flex items-center space-x-10 '>
+						<div className='ml-5 flex items-center justify-between pl-10 md:ml-0'>
+							<div className='hidden items-center space-x-10 md:flex '>
 								<NavLink
 									to='/home'
-									className='font-base text-black  pb-2 link link-underline link-underline-black'
+									className='font-base link  link-underline-black pb-2 text-black'
 									style={({ isActive }) => (isActive ? activeStyle : undefined)}
 								>
 									Home
 								</NavLink>
 								<NavLink
 									to='/allprojects'
-									className='font-base text-black  pb-2 link link-underline link-underline-black'
+									className='font-base link  link-underline link-underline-black pb-2 text-black'
 									style={({ isActive }) => (isActive ? activeStyle : undefined)}
 								>
 									All Projects
 								</NavLink>
 								<NavLink
 									to='/blogs'
-									className='font-base text-black  pb-2 link link-underline link-underline-black'
+									className='font-base link  link-underline link-underline-black pb-2 text-black'
 									style={({ isActive }) => (isActive ? activeStyle : undefined)}
 								>
 									Blogs
 								</NavLink>
 								<NavLink
 									to='/aboutme'
-									className='font-base text-black  pb-2 link link-underline link-underline-black'
+									className='font-base link  link-underline link-underline-black pb-2 text-black'
 									style={({ isActive }) => (isActive ? activeStyle : undefined)}
 								>
 									About Me
 								</NavLink>
 							</div>
 							<div>
-								<div className='hidden md:flex justify-center items-center h-24'>
+								<div className='hidden h-24 items-center justify-center md:flex'>
 									{" "}
 									<HashLink
 										smooth
 										to='/home#contact'
-										className='cursor-default  text-brand-3 md:px-8  py-2 px-6 hover:bg-brand-4 hover:text-white bg-brand-white uppercase border-2 md:border-2 shadow-xl border-brand-3 mb-2 mr-28 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-xl'
+										className='text-brand-3  hover:bg-brand-4 bg-brand-white  border-brand-3 mb-2 mr-28 transform cursor-default border-2 py-2 px-6 uppercase shadow-xl transition duration-500 ease-in-out hover:-translate-y-2 hover:text-white hover:shadow-xl md:border-2 md:px-8'
 									>
 										Contact
 									</HashLink>
 								</div>
 							</div>
 						</div>
-						<div className='-mr-2 md:hidden flex absolute right-5 top-2'>
+						<div className='absolute right-5 top-2 -mr-2 flex md:hidden'>
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type='button'
-								className='bg-brand-1 inline-flex items-center justify-center p-1 rounded-xl text-brand-4 transition duration-300 ease-in-out hover:text-brand-1 border-2 border-brand-4 hover:bg-brand-4 focus:outline-none '
+								className='bg-brand-1 text-brand-4 hover:text-brand-1 border-brand-4 hover:bg-brand-4 inline-flex items-center justify-center rounded-xl border-2 p-1 transition duration-300 ease-in-out focus:outline-none '
 								aria-controls='mobile-menu'
 								aria-expanded='false'
 							>
@@ -118,10 +119,10 @@ const Header = () => {
 				>
 					{(ref) => (
 						<div className='md:hidden ' id='mobile-menu'>
-							<div ref={ref} className=' pt-2   text-center mx-auto bg-brand-1'>
+							<div ref={ref} className=' bg-brand-1   mx-auto pt-2 text-center'>
 								<NavLink
 									to='/home'
-									className='font-semibold text-brand-2 hover:bg-white hover:text-brand-2 block px-3   text-base w-full border-b border-brand-2 py-3 mt-10'
+									className='text-brand-2 hover:text-brand-2 border-brand-2 mt-10 block w-full   border-b px-3 py-3 text-base font-semibold hover:bg-white'
 									activeStyle={{
 										backgroundColor: "#FFFFFF",
 										color: "#000000",
@@ -133,7 +134,7 @@ const Header = () => {
 								</NavLink>
 								<NavLink
 									to='/allprojects'
-									className='font-semibold text-brand-2 hover:bg-white hover:text-brand-2 block px-3  text-base w-full border-b border-brand-2 py-3'
+									className='text-brand-2 hover:text-brand-2 border-brand-2 block w-full border-b  px-3 py-3 text-base font-semibold hover:bg-white'
 									activeStyle={{
 										backgroundColor: "#FFFFFF",
 										color: "#000000",
@@ -145,7 +146,7 @@ const Header = () => {
 								</NavLink>
 								<NavLink
 									to='/blogs'
-									className='font-semibold text-brand-2 hover:bg-white hover:text-brand-2 block px-3  text-base w-full border-b border-brand-2 py-3'
+									className='text-brand-2 hover:text-brand-2 border-brand-2 block w-full border-b  px-3 py-3 text-base font-semibold hover:bg-white'
 									activeStyle={{
 										backgroundColor: "#FFFFFF",
 										color: "#000000",
@@ -157,7 +158,7 @@ const Header = () => {
 								</NavLink>
 								<NavLink
 									to='/aboutme'
-									className='font-semibold text-brand-2 hover:bg-white hover:text-brand-2 block px-3  text-base w-full border-b border-brand-2 py-3'
+									className='text-brand-2 hover:text-brand-2 border-brand-2 block w-full border-b  px-3 py-3 text-base font-semibold hover:bg-white'
 									activeStyle={{
 										backgroundColor: "#FFFFFF",
 										color: "#000000",

@@ -9,8 +9,9 @@ const Contact = () => {
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm("phsaurav", "template_3tn6n5v", form.current, "rHPn86XqXxoASG1sA").then(
+		emailjs.sendForm("phsaurav", "template_52xfq3o", form.current, "rHPn86XqXxoASG1sA").then(
 			(result) => {
+				console.log(result);
 				toast.success("Message Sent!", {
 					position: "top-center",
 					autoClose: 5000,
@@ -133,7 +134,6 @@ const Contact = () => {
 									<input
 										type='text'
 										name='user_name'
-										id='name'
 										placeholder='Full Name'
 										className='w-100 mt-2 border border-gray-400  bg-white py-3 px-3 font-semibold text-gray-800 focus:border-indigo-500 focus:outline-none dark:border-gray-700 dark:bg-gray-800'
 										required
@@ -147,7 +147,6 @@ const Contact = () => {
 									<input
 										type='email'
 										name='user_email'
-										id='email'
 										placeholder='Email'
 										className='w-100 mt-2 border border-gray-400  bg-white py-3 px-3 font-semibold text-gray-800 focus:border-indigo-500 focus:outline-none dark:border-gray-700 dark:bg-gray-800'
 										required
