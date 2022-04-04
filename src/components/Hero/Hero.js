@@ -50,12 +50,14 @@ const Hero = () => {
 					</div>
 					<div className=' md:w-1/2'>
 						<Link to='/aboutme'>
-							<img
-								data-aos='zoom-in-down'
-								className='-mb-20 mt-16 -ml-5 w-full transform pt-5 transition duration-500 ease-in-out hover:-translate-y-6 lg:-mb-36 lg:mt-0 lg:ml-0 xl:-mb-40'
-								src='/assets/banner_pic.png'
-								alt=''
-							></img>
+							<div className='transform pt-5 transition duration-500 ease-in-out hover:-translate-y-6'>
+								<img
+									data-aos='zoom-in-down'
+									className='-mb-20 mt-16 -ml-5 w-full transform pt-5 transition duration-500 ease-in-out hover:-translate-y-6 lg:-mb-36 lg:mt-0 lg:ml-0 xl:-mb-40'
+									src='/assets/banner_pic.png'
+									alt=''
+								></img>
+							</div>
 						</Link>
 					</div>
 				</div>
