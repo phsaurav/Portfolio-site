@@ -13,7 +13,9 @@ const TopProjects = () => {
 				<div className='border-brand-3 h-px w-20 mb-10 border-b'></div>
 			</div>
 			<div className='flex justify-center items-center container mx-auto gap-20 lg:gap-20 flex-wrap'>
-				{projects.slice(0, 3).map((project) => (
+				{projects
+// @ts-ignore
+				.slice(0, 3).map((project) => (
 					<ProjectCard key={project.id} project={project}></ProjectCard>
 				))}
 			</div>
