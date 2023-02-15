@@ -17,13 +17,14 @@ const Home = () => {
                             <Hero></Hero>
                         </div>
                     </div>
+
                     <div className='mt-64'>
-                        <Certifications></Certifications>
-                    </div>
-                    <div className='mt-40'>
                         <TopProjects></TopProjects>
                     </div>
-                    <div className='mt-40'>
+                    <div className='mt-32'>
+                        <Certifications></Certifications>
+                    </div>
+                    <div className='mt-32'>
                         <Contact></Contact>
                     </div>
                 </div>

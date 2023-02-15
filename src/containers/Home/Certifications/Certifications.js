@@ -1,35 +1,24 @@
 import React from "react";
+import Certification from "../../../components/Certification/Certification";
+import { certificationList } from "../../../utils/constants";
 
 const Certifications = () => {
-    const skillsBar = [
-        {
-            name: "ReactJs",
-            // svg: '',
-            faClass: "fab fa-react",
-        },
-        {
-            name: "Javascript",
-            // svg: '',
-            faClass: "fab fa-js",
-        },
-        {
-            name: "Python",
-            faClass: "fab fa-python",
-        },
-        {
-            name: "HTML5",
-            // To add a custom svg instead of font-awesome icons, add svg path below otherwise just comment it out
-            // svg: ",
-            faClass: "fab fa-html5",
-        },
-    ];
     return (
         <>
             <h1 className='text-brand-3 mt-10 mb-2 text-2xl font-light uppercase md:text-3xl'>
-                Some of my latest work
+                Certifications & Achivements
             </h1>
             <div className='flex justify-center'>
                 <div className='border-brand-3 mb-10 h-px w-20 border-b'></div>
+            </div>
+            <div>
+                <div className='row ml-3 flex flex-wrap justify-center'>
+                    {certificationList.map((x) => (
+                        <div className='w-72 transition duration-500 ease-in-out hover:-translate-y-6 '>
+                            <Certification link={x.link} key={x.name} svg={x.svg} label={x.name} />
+                        </div>
+                    ))}
+                </div>
             </div>
         </>
     );
