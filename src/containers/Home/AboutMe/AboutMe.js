@@ -18,13 +18,16 @@ const AboutMe = () => {
             faClass: "fab fa-js",
         },
         {
-            name: "Python",
+            name: "Flutter",
+            // svg: '',
+            faClass: "fab fa-android",
+        },
+        {
+            name: "Django",
             faClass: "fab fa-python",
         },
         {
             name: "HTML5",
-            // To add a custom svg instead of font-awesome icons, add svg path below otherwise just comment it out
-            // svg: ",
             faClass: "fab fa-html5",
         },
         {
@@ -46,7 +49,7 @@ const AboutMe = () => {
         },
 
         {
-            name: "MongoDB",
+            name: "PostgreSQL",
             // svg: '',
             faClass: "fas fa-database",
         },
@@ -82,9 +85,9 @@ const AboutMe = () => {
                                         >
                                             <Typical
                                                 steps={[
-                                                    "A MERN Stack Developer",
+                                                    "A Full Stack Developer",
                                                     3000,
-                                                    "An UI/UX & Graphic Designer",
+                                                    "A UI/UX & Graphic Designer",
                                                     3000,
                                                     "An Enthusiast",
                                                     3000,
@@ -94,12 +97,17 @@ const AboutMe = () => {
                                         </div>
                                     </div>
                                     <p className='text-brand-5 mx-6 mt-5  text-lg font-light md:mx-0 md:text-xl'>
-                                        I am a MERN stack developer with an extensive history of
-                                        designing who loves developing high-quality products. I
-                                        mainly focused on front-end development and have a working
-                                        knowledge of building React websites and web applications.
-                                        Also have experience working with technologies like
-                                        ExpressJs, MongoDB and certified in UI/UX specialization.
+                                        I am a full-stack software developer with a passion for
+                                        creating exceptional web and mobile applications, I have
+                                        extensive experience in building comprehensive web apps and
+                                        websites using ReactJS/NextJS, and complex backend
+                                        applications with Django Rest Framework. Proficiency in
+                                        Flutter for building high-quality Android and iOS
+                                        applications and publish them on Playstore and Appstore. I'm
+                                        also skilled in designing, and I enjoy bringing innovative
+                                        ideas to life. If you're looking for a dedicated developer
+                                        with a proven track record of delivering outstanding
+                                        results, feel free to connect with me.
                                     </p>
                                     <div className='flex justify-center'>
                                         <a href={RESUME_LINK}>

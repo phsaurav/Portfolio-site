@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
-    const { id, title, subtitle, img1 } = project;
+    const { id, title, subtitle, images } = project;
     return (
         <div>
             <Link to={`/project/${id}`}>
@@ -12,11 +12,11 @@ const ProjectCard = ({ project }) => {
                         style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw))" }}
                     >
                         <div className='absolute inset-0 bg-black bg-opacity-20 transition duration-300 ease-in-out group-hover:opacity-75'></div>
-                        <img className='w-full hover:object-fill' src={img1} alt='' />
+                        <img className='w-full hover:object-fill' src={images[0]} alt='' />
                     </div>
                     <div className='pt-3 pb-8 text-center text-gray-600'>
                         <p className='font-base text-3xl'>{title}</p>
-                        <p className='text-sm font-light'>{subtitle}</p>
+                        <p className='truncate px-5 text-sm font-light'>{subtitle}</p>
                     </div>
                 </div>
             </Link>

@@ -27,7 +27,7 @@ const Hero = () => {
                                 >
                                     <Typical
                                         steps={[
-                                            "A MERN Stack Developer",
+                                            "A Full Stack Developer",
                                             3000,
                                             "A UI/UX & Graphic Designer",
                                             3000,
