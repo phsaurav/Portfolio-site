@@ -1,7 +1,6 @@
 import { Transition } from "@headlessui/react";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import "./Header.css";
 
 const Header = () => {
@@ -56,7 +55,7 @@ const Header = () => {
                                 </NavLink>
                             </div>
                             <div>
-                                <div className='h-24 hidden items-center justify-center md:flex'>
+                                {/* <div className='h-24 hidden items-center justify-center md:flex'>
                                     {" "}
                                     <HashLink
                                         smooth
@@ -65,21 +64,21 @@ const Header = () => {
                                     >
                                         Contact
                                     </HashLink>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className='absolute right-5 top-2 -mr-2 flex md:hidden'>
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 type='button'
-                                className='focus:outline-none inline-flex items-center justify-center rounded-xl border-2 border-brand-4 bg-brand-1 p-1 text-brand-4 transition duration-300 ease-in-out hover:bg-brand-4 hover:text-brand-1 '
+                                className='border-brand-4 bg-brand-1 text-brand-4 hover:bg-brand-4 hover:text-brand-1 inline-flex items-center justify-center rounded-xl border-2 p-1 transition duration-300 ease-in-out focus:outline-none '
                                 aria-controls='mobile-menu'
                                 aria-expanded='false'
                             >
                                 <span className='sr-only'>Open main menu</span>
                                 {!isOpen ? (
                                     <svg
-                                        className='h-6 block w-6'
+                                        className='block h-6 w-6'
                                         xmlns='http://www.w3.org/2000/svg'
                                         fill='none'
                                         viewBox='0 0 24 24'
@@ -95,7 +94,7 @@ const Header = () => {
                                     </svg>
                                 ) : (
                                     <svg
-                                        className='h-6 block w-6'
+                                        className='block h-6 w-6'
                                         xmlns='http://www.w3.org/2000/svg'
                                         fill='none'
                                         viewBox='0 0 24 24'
@@ -126,31 +125,31 @@ const Header = () => {
                 >
                     {(ref) => (
                         <div className='md:hidden ' id='mobile-menu'>
-                            <div ref={ref} className=' mx-auto   bg-brand-1 pt-2 text-center'>
+                            <div ref={ref} className=' bg-brand-1   mx-auto pt-2 text-center'>
                                 <NavLink
                                     to='/home'
-                                    className='mt-10 block w-full border-b border-brand-2 px-3   py-3 text-base font-semibold text-brand-2 hover:bg-white hover:text-brand-2'
+                                    className='border-brand-2 text-brand-2 hover:text-brand-2 mt-10 block w-full   border-b px-3 py-3 text-base font-semibold hover:bg-white'
                                     style={({ isActive }) => (isActive ? mobileActiveStyle : {})}
                                 >
                                     Home
                                 </NavLink>
                                 <NavLink
                                     to='/allprojects'
-                                    className='block w-full border-b border-brand-2 px-3 py-3  text-base font-semibold text-brand-2 hover:bg-white hover:text-brand-2'
+                                    className='border-brand-2 text-brand-2 hover:text-brand-2 block w-full border-b  px-3 py-3 text-base font-semibold hover:bg-white'
                                     style={({ isActive }) => (isActive ? mobileActiveStyle : {})}
                                 >
                                     All Projects
                                 </NavLink>
                                 <NavLink
                                     to='/blogs'
-                                    className='block w-full border-b border-brand-2 px-3 py-3  text-base font-semibold text-brand-2 hover:bg-white hover:text-brand-2'
+                                    className='border-brand-2 text-brand-2 hover:text-brand-2 block w-full border-b  px-3 py-3 text-base font-semibold hover:bg-white'
                                     style={({ isActive }) => (isActive ? mobileActiveStyle : {})}
                                 >
                                     Blogs
                                 </NavLink>
                                 <NavLink
                                     to='/aboutme'
-                                    className='block w-full border-b border-brand-2 px-3 py-3  text-base font-semibold text-brand-2 hover:bg-white hover:text-brand-2'
+                                    className='border-brand-2 text-brand-2 hover:text-brand-2 block w-full border-b  px-3 py-3 text-base font-semibold hover:bg-white'
                                     style={({ isActive }) => (isActive ? mobileActiveStyle : {})}
                                 >
                                     About Me
