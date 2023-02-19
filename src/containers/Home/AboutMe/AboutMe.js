@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import Footer from "../../../components/Footer/Footer";
 import Header from "../../../components/Header/Header";
 import Skills from "../../../components/Skills/Skills";
-import { RESUME_LINK } from "../../../utils/constants";
+import { ANIMATION_TEXT_LIST, RESUME_LINK } from "../../../utils/constants";
 
 const AboutMe = () => {
     const skillsBar = [
@@ -84,14 +84,7 @@ const AboutMe = () => {
                                             style={{ fontFamily: "'Cutive Mono', monospace" }}
                                         >
                                             <Typical
-                                                steps={[
-                                                    "A Full Stack Developer",
-                                                    3000,
-                                                    "A UI/UX & Graphic Designer",
-                                                    3000,
-                                                    "An Enthusiast",
-                                                    3000,
-                                                ]}
+                                                steps={ANIMATION_TEXT_LIST}
                                                 loop={Infinity}
                                             />
                                         </div>
