@@ -3,6 +3,17 @@ import React from "react";
 export const RESUME_LINK =
     "https://drive.google.com/file/d/17NL08XUiR_XfvCp3RjeLnZkrR1lAgN5m/view?usp=sharing";
 
+export const ANIMATION_TEXT_LIST = [
+    "A Full Stack Developer",
+    3000,
+    "An Mobile App Developer",
+    3000,
+    "A UI/UX & Graphic Designer",
+    3000,
+    "An Enthusiast",
+    3000,
+];
+
 export const certificationList = [
     {
         name: "AlgoExpert",

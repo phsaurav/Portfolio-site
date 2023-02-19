@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Typical from "react-typical";
-import { RESUME_LINK } from "../../utils/constants";
+import { ANIMATION_TEXT_LIST, RESUME_LINK } from "../../utils/constants";
 
 const Hero = () => {
     return (
@@ -25,19 +25,7 @@ const Hero = () => {
                                     className='text-brand-5 -mb-5 text-lg font-semibold lg:text-3xl xl:mb-0'
                                     style={{ fontFamily: "'Cutive Mono', monospace" }}
                                 >
-                                    <Typical
-                                        steps={[
-                                            "A Full Stack Developer",
-                                            3000,
-                                            "An Mobile App Developer",
-                                            3000,
-                                            "A UI/UX & Graphic Designer",
-                                            3000,
-                                            "An Enthusiast",
-                                            3000,
-                                        ]}
-                                        loop={Infinity}
-                                    />
+                                    <Typical steps={ANIMATION_TEXT_LIST} loop={Infinity} />
                                 </div>
                             </div>
                             <div>
