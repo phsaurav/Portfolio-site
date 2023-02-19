@@ -29,6 +29,8 @@ const Hero = () => {
                                         steps={[
                                             "A Full Stack Developer",
                                             3000,
+                                            "An Mobile App Developer",
+                                            3000,
                                             "A UI/UX & Graphic Designer",
                                             3000,
                                             "An Enthusiast",
