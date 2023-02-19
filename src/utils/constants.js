@@ -6,7 +6,7 @@ export const RESUME_LINK =
 export const ANIMATION_TEXT_LIST = [
     "A Full Stack Developer",
     3000,
-    "An Mobile App Developer",
+    "A Mobile App Developer",
     3000,
     "A UI/UX & Graphic Designer",
     3000,
