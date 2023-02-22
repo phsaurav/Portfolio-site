@@ -2,8 +2,8 @@ import React from "react";
 import Typical from "react-typical";
 import Footer from "../../../components/Footer/Footer";
 import Header from "../../../components/Header/Header";
-import Skills from "../../../components/Skills/Skills";
 import { ANIMATION_TEXT_LIST, RESUME_LINK } from "../../../utils/constants";
+import Skills from "../Skills/Skills";
 
 const AboutMe = () => {
     const skillsBar = [
@@ -83,10 +83,7 @@ const AboutMe = () => {
                                             className='text-brand-5 text-xl font-semibold md:text-2xl xl:mb-0'
                                             style={{ fontFamily: "'Cutive Mono', monospace" }}
                                         >
-                                            <Typical
-                                                steps={ANIMATION_TEXT_LIST}
-                                                loop={Infinity}
-                                            />
+                                            <Typical steps={ANIMATION_TEXT_LIST} loop={Infinity} />
                                         </div>
                                     </div>
                                     <p className='text-brand-5 mx-6 mt-5  text-lg font-light md:mx-0 md:text-xl'>
@@ -111,15 +108,8 @@ const AboutMe = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <div className='row skills flex flex-wrap justify-center'>
-                                        {skillsBar.map((x) => (
-                                            <Skills
-                                                key={x.name}
-                                                faClass={x.faClass}
-                                                svg={x.svg}
-                                                label={x.name}
-                                            />
-                                        ))}
+                                    <div className='row flex flex-wrap justify-center'>
+                                        <Skills aboutMe={true}/>
                                     </div>
                                 </div>
                             </div>
