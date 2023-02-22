@@ -6,59 +6,59 @@ import { ANIMATION_TEXT_LIST, RESUME_LINK } from "../../../utils/constants";
 import Skills from "../Skills/Skills";
 
 const AboutMe = () => {
-    const skillsBar = [
-        {
-            name: "ReactJs",
-            // svg: '',
-            faClass: "fab fa-react",
-        },
-        {
-            name: "Javascript",
-            // svg: '',
-            faClass: "fab fa-js",
-        },
-        {
-            name: "Flutter",
-            // svg: '',
-            faClass: "fab fa-android",
-        },
-        {
-            name: "Django",
-            faClass: "fab fa-python",
-        },
-        {
-            name: "HTML5",
-            faClass: "fab fa-html5",
-        },
-        {
-            name: "CSS3",
-            // svg: '',
-            faClass: "fab fa-css3",
-        },
+    // const skillsBar = [
+    //     {
+    //         name: "ReactJs",
+    //         // svg: '',
+    //         faClass: "fab fa-react",
+    //     },
+    //     {
+    //         name: "Javascript",
+    //         // svg: '',
+    //         faClass: "fab fa-js",
+    //     },
+    //     {
+    //         name: "Flutter",
+    //         // svg: '',
+    //         faClass: "fab fa-android",
+    //     },
+    //     {
+    //         name: "Django",
+    //         faClass: "fab fa-python",
+    //     },
+    //     {
+    //         name: "HTML5",
+    //         faClass: "fab fa-html5",
+    //     },
+    //     {
+    //         name: "CSS3",
+    //         // svg: '',
+    //         faClass: "fab fa-css3",
+    //     },
 
-        {
-            name: "Node",
-            // svg: '',
-            faClass: "fab fa-node",
-        },
+    //     {
+    //         name: "Node",
+    //         // svg: '',
+    //         faClass: "fab fa-node",
+    //     },
 
-        {
-            name: "Express",
-            // svg: '',
-            faClass: "fas fa-cogs",
-        },
+    //     {
+    //         name: "Express",
+    //         // svg: '',
+    //         faClass: "fas fa-cogs",
+    //     },
 
-        {
-            name: "PostgreSQL",
-            // svg: '',
-            faClass: "fas fa-database",
-        },
-        {
-            name: "SASS",
-            // svg: '',
-            faClass: "fab fa-sass",
-        },
-    ];
+    //     {
+    //         name: "PostgreSQL",
+    //         // svg: '',
+    //         faClass: "fas fa-database",
+    //     },
+    //     {
+    //         name: "SASS",
+    //         // svg: '',
+    //         faClass: "fab fa-sass",
+    //     },
+    // ];
     return (
         <div className='flex min-h-screen flex-col justify-between'>
             <div>
