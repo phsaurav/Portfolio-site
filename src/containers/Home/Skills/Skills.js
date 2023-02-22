@@ -115,13 +115,14 @@ const Pane3 = () => {
     return <DevOpsSkills />;
 };
 const Skills = ({ aboutMe = false }) => {
-    const [focusedIdx, setFocusedIdx] = React.useState(0);
+    const [focusedIdx, setFocusedIdx] = React.useState(1);
     const [clicked, setClicked] = React.useState(false);
     const idxRef = useRef(focusedIdx);
-    idxRef.current = focusedIdx;
+    idxRef.current = 0;
 
     useEffect(() => {
         let interval;
+        setFocusedIdx(0);
         if (!clicked) {
             interval = setInterval(() => {
                 setFocusedIdx((currIdx) => (currIdx + 1) % 3);

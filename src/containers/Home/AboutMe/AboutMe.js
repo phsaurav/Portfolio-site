@@ -72,7 +72,10 @@ const AboutMe = () => {
                                 alt=''
                             />
                         </div>
-                        <div className='flex justify-center bg-white p-10' data-aos='zoom-in-up'>
+                        <div
+                            className='flex justify-center bg-white p-10'
+                            data-aos='zoom-in-up offset-10'
+                        >
                             <div className='flex flex-col items-center justify-center'>
                                 <div className='max-w-xl '>
                                     <div className=' border-brand-5 border-b-4 pb-5'>
@@ -109,7 +112,7 @@ const AboutMe = () => {
                                 </div>
                                 <div>
                                     <div className='row flex flex-wrap justify-center'>
-                                        <Skills aboutMe={true}/>
+                                        <Skills aboutMe={true} />
                                     </div>
                                 </div>
                             </div>
