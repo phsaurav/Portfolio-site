@@ -114,7 +114,7 @@ const Pane2 = () => {
 const Pane3 = () => {
     return <DevOpsSkills />;
 };
-const Skills = () => {
+const Skills = ({ aboutMe = false }) => {
     const [focusedIdx, setFocusedIdx] = React.useState(0);
     const [clicked, setClicked] = React.useState(false);
     const idxRef = useRef(focusedIdx);
@@ -131,25 +131,21 @@ const Skills = () => {
         }
         return () => clearInterval(interval);
     }, [clicked]);
-    // const timer = setInterval(() => {
-    //     setFocusedIdx((value) => (value + 1) % 3);
-    //     console.log(focusedIdx);
-    // }, 3000);
-    // useTimeout(() => {
-    //     setFocusedIdx((value) => (value + 1) % 3);
-    //     console.log(focusedIdx);
-    // }, 1000);
 
     return (
         <>
-            <h1 className='text-brand-3 mt-10 mb-2 text-2xl font-light uppercase md:text-3xl'>
-                Development Skills & Tools
-            </h1>
-            <div className='flex justify-center'>
-                <div className='border-brand-3 mb-8 h-px w-20 border-b'></div>
-            </div>
+            {!aboutMe && (
+                <div>
+                    <h1 className='text-brand-3 mt-10 mb-2 text-2xl font-light uppercase md:text-3xl'>
+                        Development Skills & Tools
+                    </h1>
+                    <div className='flex justify-center'>
+                        <div className='border-brand-3 mb-8 h-px w-20 border-b'></div>
+                    </div>
+                </div>
+            )}
             <div className='container mx-auto items-center justify-center '>
-                <div className='w-full xl:mx-auto xl:w-1/2'>
+                <div className={`w-full xl:mx-auto ${aboutMe ? "xl:w-9/12" : "xl:w-1/2"}`}>
                     <Tabs
                         focusedIdx={focusedIdx}
                         onChange={(i) => {
@@ -163,7 +159,7 @@ const Skills = () => {
                     </Tabs>
                 </div>
 
-                <div className='mt-6 w-full xl:mx-auto xl:w-10/12'>
+                <div className={`${aboutMe ? "xl:w-9/12" : "xl:w-10/12"} mt-6 w-full xl:mx-auto`}>
                     <Sliders focusedIdx={focusedIdx}>
                         <Pane1 />
                         <Pane2 />
