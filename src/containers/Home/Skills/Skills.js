@@ -5,27 +5,6 @@ import BackendSkills from "./BackendSkills/BackendSkills";
 import DevOpsSkills from "./DevOpsSkills/DevOpsSkills";
 import FrontendSkills from "./FrontendSkills/FrontendSkills";
 
-function useTimeout(callback, delay) {
-    const savedCallback = useRef(callback);
-
-    // Remember the latest callback if it changes.
-    useEffect(() => {
-        savedCallback.current = callback;
-    }, [callback]);
-
-    // Set up the timeout.
-    useEffect(() => {
-        // Don't schedule if no delay is specified.
-        if (delay === null) {
-            return;
-        }
-
-        const id = setTimeout(() => savedCallback.current(), delay);
-
-        return () => clearTimeout(id);
-    }, [delay]);
-}
-
 const StyledTabIndicator = styled.div`
     position: absolute;
     width: ${(props) => 100 / props.tabCount}%;
@@ -145,7 +124,6 @@ const Skills = () => {
         let interval;
         if (!clicked) {
             interval = setInterval(() => {
-                let currIdx = idxRef.current;
                 setFocusedIdx((currIdx) => (currIdx + 1) % 3);
             }, 4000);
         } else {
@@ -153,14 +131,6 @@ const Skills = () => {
         }
         return () => clearInterval(interval);
     }, [clicked]);
-    // const timer = setInterval(() => {
-    //     setFocusedIdx((value) => (value + 1) % 3);
-    //     console.log(focusedIdx);
-    // }, 3000);
-    // useTimeout(() => {
-    //     setFocusedIdx((value) => (value + 1) % 3);
-    //     console.log(focusedIdx);
-    // }, 1000);
 
     return (
         <>
