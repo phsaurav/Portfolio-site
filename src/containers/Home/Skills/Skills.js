@@ -159,7 +159,7 @@ const Skills = ({ aboutMe = false }) => {
                     </Tabs>
                 </div>
 
-                <div className={`${aboutMe ? "xl:w-9/12" : "xl:w-10/12"} mt-6 w-full xl:mx-auto`}>
+                <div className={`${aboutMe ? "xl:w-10/12" : "xl:w-10/12"} mt-6 w-full xl:mx-auto`}>
                     <Sliders focusedIdx={focusedIdx}>
                         <Pane1 />
                         <Pane2 />
