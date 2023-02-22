@@ -1,7 +1,9 @@
 import s from "csd";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
-import { useEffect, useRef } from "react";
+import BackendSkills from "./BackendSkills/BackendSkills";
+import DevOpsSkills from "./DevOpsSkills/DevOpsSkills";
+import FrontendSkills from "./FrontendSkills/FrontendSkills";
 
 function useTimeout(callback, delay) {
     const savedCallback = useRef(callback);
@@ -125,13 +127,13 @@ const Sliders = ({ focusedIdx, children, duration = 500 }) => {
 };
 
 const Pane1 = () => {
-    return <div>1</div>;
+    return <FrontendSkills />;
 };
 const Pane2 = () => {
-    return <div>2</div>;
+    return <BackendSkills />;
 };
 const Pane3 = () => {
-    return <div>3</div>;
+    return <DevOpsSkills />;
 };
 const Skills = () => {
     const [focusedIdx, setFocusedIdx] = React.useState(0);
@@ -145,7 +147,7 @@ const Skills = () => {
             interval = setInterval(() => {
                 let currIdx = idxRef.current;
                 setFocusedIdx((currIdx) => (currIdx + 1) % 3);
-            }, 3000);
+            }, 4000);
         } else {
             clearInterval(interval);
         }
@@ -166,7 +168,7 @@ const Skills = () => {
                 Development Skills & Tools
             </h1>
             <div className='flex justify-center'>
-                <div className='border-brand-3 mb-10 h-px w-20 border-b'></div>
+                <div className='border-brand-3 mb-8 h-px w-20 border-b'></div>
             </div>
             <div className='container mx-auto items-center justify-center '>
                 <div className='w-full xl:mx-auto xl:w-1/2'>
@@ -182,11 +184,14 @@ const Skills = () => {
                         <Tab title='DevOps & Tools' />
                     </Tabs>
                 </div>
-                <Sliders focusedIdx={focusedIdx}>
-                    <Pane1 />
-                    <Pane2 />
-                    <Pane3 />
-                </Sliders>
+
+                <div className='mt-6 w-full xl:mx-auto xl:w-10/12'>
+                    <Sliders focusedIdx={focusedIdx}>
+                        <Pane1 />
+                        <Pane2 />
+                        <Pane3 />
+                    </Sliders>
+                </div>
             </div>
         </>
     );

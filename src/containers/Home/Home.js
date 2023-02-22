@@ -18,11 +18,11 @@ const Home = () => {
                             <Hero></Hero>
                         </div>
                     </div>
-                    {/* <div className='mt-56'>
+                    <div className='mt-52'>
                         <Skills></Skills>
-                    </div> */}
+                    </div>
 
-                    <div className='mt-64'>
+                    <div className='mt-20'>
                         <TopProjects></TopProjects>
                     </div>
                     <div className='mt-32'>
