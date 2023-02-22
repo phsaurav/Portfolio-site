@@ -3,6 +3,8 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import Certifications from "./Certifications/Certifications";
+import Contact from "./Contact/Contact";
+import Skills from "./Skills/Skills";
 import TopProjects from "./TopProjects/TopProjects";
 
 const Home = () => {
@@ -16,8 +18,11 @@ const Home = () => {
                             <Hero></Hero>
                         </div>
                     </div>
+                    <div className='mt-52'>
+                        <Skills></Skills>
+                    </div>
 
-                    <div className='mt-64'>
+                    <div className='mt-20'>
                         <TopProjects></TopProjects>
                     </div>
                     <div className='mt-32'>
