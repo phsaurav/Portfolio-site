@@ -1,7 +1,7 @@
 import React from "react";
 
 export const RESUME_LINK =
-    "https://drive.google.com/file/d/17NL08XUiR_XfvCp3RjeLnZkrR1lAgN5m/view?usp=sharing";
+    "https://drive.google.com/file/d/1o1j1flD5B_DHz3gOvp4WxG5lmoYbT3UU/view?usp=sharing";
 
 export const ANIMATION_TEXT_LIST = [
     "A Full Stack Developer",
@@ -12,6 +12,65 @@ export const ANIMATION_TEXT_LIST = [
     3000,
     "An Enthusiast",
     3000,
+];
+
+export const skillSet = [
+    {
+        label: "React",
+        img: "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+    },
+    {
+        label: "Next JS",
+        img: "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
+    },
+    {
+        label: "Flutter",
+        img: "https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white",
+    },
+    {
+        label: "Redux",
+        img: "https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white",
+    },
+    {
+        label: "TailwindCSS",
+        img: "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white",
+    },
+    {
+        label: "MUI",
+        img: "https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white",
+    },
+    {
+        label: "React Router",
+        img: "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
+    },
+    {
+        label: "TypeScript",
+        img: "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
+    },
+    {
+        label: "JavaScript",
+        img: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
+    },
+    {
+        label: "Dart",
+        img: "https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white",
+    },
+    {
+        label: "Cypress",
+        img: "https://img.shields.io/badge/cypress-%2317202C.svg?style=for-the-badge&logo=cypress&logoColor=white",
+    },
+    {
+        label: "Testing Library",
+        img: "https://img.shields.io/badge/Testing%20Library-%23E33332.svg?style=for-the-badge&logo=Testing%20Library&logoColor=white",
+    },
+    {
+        label: "Riverpod",
+        img: "https://img.shields.io/badge/Riverpod-%230081CB.svg?style=for-the-badge",
+    },
+    {
+        label: "Mockito",
+        img: "https://img.shields.io/badge/Mockito-%2368BC71.svg?style=for-the-badge&logo=Mocha&logoColor=white",
+    },
 ];
 
 export const certificationList = [
