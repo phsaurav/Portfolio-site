@@ -106,7 +106,7 @@ const FrontendSkills = () => {
                     alt='Mockito'
                 /> */}
                 {skills.map((skill) => {
-                    const selectedSkill = skillSet.filter((e) => e.label == skill);
+                    const selectedSkill = skillSet.filter((e) => e.label === skill);
                     return (
                         <div>
                             <img
