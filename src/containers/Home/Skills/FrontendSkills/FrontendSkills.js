@@ -2,26 +2,26 @@ import React from "react";
 import { skillSet } from "../../../../utils/constants";
 
 const FrontendSkills = () => {
-    const skills = [
-        "React",
-        "Next JS",
-        "Flutter",
-        "Redux",
-        "TailwindCSS",
-        "MUI",
-        "React Router",
-        "TypeScript",
-        "JavaScript",
-        "Dart",
-        "Cypress",
-        "Testing Library",
-        "Riverpod",
-        "Mockito",
-    ];
+    // const skills = [
+    //     "React",
+    //     "Next JS",
+    //     "Flutter",
+    //     "Redux",
+    //     "TailwindCSS",
+    //     "MUI",
+    //     "React Router",
+    //     "TypeScript",
+    //     "JavaScript",
+    //     "Dart",
+    //     "Cypress",
+    //     "Testing Library",
+    //     "Riverpod",
+    //     "Mockito",
+    // ];
     return (
         <>
             <div className='flex flex-wrap justify-center gap-2'>
-                {/* <img
+                <img
                     src='https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB'
                     data-aos='zoom-in-up'
                     data-aos-duration='1000'
@@ -104,8 +104,8 @@ const FrontendSkills = () => {
                     data-aos='zoom-in-up'
                     data-aos-duration='1000'
                     alt='Mockito'
-                /> */}
-                {skills.map((skill) => {
+                />
+                {/* {skills.map((skill) => {
                     const selectedSkill = skillSet.filter((e) => e.label === skill);
                     return (
                         <div>
@@ -117,7 +117,7 @@ const FrontendSkills = () => {
                             />
                         </div>
                     );
-                })}
+                })} */}
             </div>
         </>
     );
