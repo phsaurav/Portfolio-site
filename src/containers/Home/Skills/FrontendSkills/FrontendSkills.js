@@ -1,5 +1,5 @@
 import React from "react";
-import { skillSet } from "../../../../utils/constants";
+// import { skillSet } from "../../../../utils/constants";
 
 const FrontendSkills = () => {
     // const skills = [
