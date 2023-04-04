@@ -21,7 +21,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Navigate replace to='/home' />}></Route>
                     <Route path='/home' element={<Home></Home>}></Route>
-                    <Route path='/allprojects' element={<AllProjects></AllProjects>}></Route>
+                    {/* <Route path='/allprojects' element={<AllProjects></AllProjects>}></Route> */}
                     <Route path='/aboutme' element={<AboutMe></AboutMe>}></Route>
                     <Route path='/blogs' element={<Blogs></Blogs>}>
                         <Route path='/blogs' element={<AllBlog />} />
