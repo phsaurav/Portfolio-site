@@ -5,7 +5,6 @@ import Hero from "../../components/Hero/Hero";
 import Certifications from "./Certifications/Certifications";
 import Contact from "./Contact/Contact";
 import Skills from "./Skills/Skills";
-import TopProjects from "./TopProjects/TopProjects";
 import NewTopProjects from "./NewTopProjects/NewTopProjects";
 
 const Home = () => {

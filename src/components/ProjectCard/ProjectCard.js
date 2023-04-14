@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { skillSet } from "../../utils/constants";
 import LinkedButton from "../LinkedButton/LinkedButton";
 
 const ProjectCard = ({ project }) => {
-  const { id, title, subtitle, description, images, skills, links } = project;
+  const { title, subtitle, description, images, skills, links } = project;
   return (
     <div>
       <div className='flex flex-col overflow-hidden lg:flex-row'>
@@ -28,7 +27,7 @@ const ProjectCard = ({ project }) => {
           <div>
             <div className='hidden flex-wrap gap-1 pt-2 opacity-80 transition duration-500 ease-in-out hover:opacity-100 md:flex xl:pt-5 '>
               {skills.map((skill) => {
-                const skillData = skillSet.filter((item) => item.label == skill);
+                const skillData = skillSet.filter((item) => item.label === skill);
                 return (
                   <div>
                     <img
