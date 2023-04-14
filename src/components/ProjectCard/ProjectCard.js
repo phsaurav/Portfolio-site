@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
     <div>
       <div className='flex flex-col overflow-hidden lg:flex-row'>
         <div
-          className=' border-brand-5 w-full border-b-2 border-l-2 bg-cover lg:w-1/2'
+          className=' border-brand-5 w-full border-l-2 bg-cover lg:w-1/2 lg:border-b-2'
           style={{
             backgroundImage: `url(${images[0]})`,
             backgroundSize: "cover",
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
             height: "400px",
           }}
         ></div>
-        <div className='border-brand-5 flex w-full flex-col justify-between border-b-2 py-8  pl-5 text-center lg:w-1/2 lg:text-left'>
+        <div className='border-brand-5 border-left-2 flex w-full flex-col justify-between border-l-2 border-b-2 py-8 pl-5  text-center lg:w-1/2 lg:border-l-0 lg:text-left'>
           <div>
             <h1 className='text-brand-3 text-2xl font-bold md:text-3xl'>{title}</h1>
             <p className='text-brand-3 text-xl lg:truncate'>{subtitle}</p>

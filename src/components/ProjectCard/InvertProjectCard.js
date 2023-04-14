@@ -8,7 +8,7 @@ const InvertProjectCard = ({ project }) => {
   return (
     <div>
       <div className='flex flex-col-reverse overflow-hidden lg:flex-row '>
-        <div className='border-brand-5 flex w-full flex-col justify-between border-b-2 py-8 pr-5 text-center lg:w-1/2 lg:text-right '>
+        <div className='border-brand-5 flex w-full flex-col justify-between border-b-2 border-r-2 py-8 pr-5 text-center lg:w-1/2 lg:border-r-0 lg:text-right'>
           <div>
             <h1 className='text-brand-3 trancate  text-2xl font-bold md:text-3xl'>{title}</h1>
             <p className='text-brand-3 text-xl lg:truncate'>{subtitle}</p>
@@ -35,7 +35,7 @@ const InvertProjectCard = ({ project }) => {
           </div>
         </div>
         <div
-          className=' border-brand-5  w-full border-b-2 border-r-2 bg-cover lg:w-1/2'
+          className=' border-brand-5  w-full border-r-2 bg-cover lg:w-1/2 lg:border-b-2'
           style={{
             backgroundImage: `url(${images[0]})`,
             backgroundSize: "cover",
