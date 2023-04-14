@@ -10,7 +10,6 @@
       "https://i.ibb.co/NN4crFx/4.jpg"
     ],
     "skills": [
-      "React",
       "Next JS",
       "TypeScript",
       "Redux",
@@ -18,14 +17,9 @@
       "MUI",
       "Testing Library",
       "Django Rest Framework",
-      "Celery",
-      "Redis",
       "Postgres",
       "Firebase",
-      "DigitalOcean",
-      "Vercel",
-      "Git",
-      "Nginx"
+      "DigitalOcean"
     ],
     "links": [
       {
@@ -53,9 +47,7 @@
       "Express.js",
       "MongoDB",
       "Firebase",
-      "Netlify",
-      "Git",
-      "Heroku"
+      "Netlify"
     ],
     "links": [
       {
@@ -80,17 +72,13 @@
     ],
     "skills": [
       "Flutter",
-      "Dart",
       "Riverpod",
       "Mockito",
       "Django Rest Framework",
       "Celery",
-      "Redis",
       "Postgres",
       "Firebase",
-      "DigitalOcean",
-      "Git",
-      "Jira"
+      "DigitalOcean"
     ],
     "links": [
       {
@@ -114,21 +102,15 @@
       "https://i.ibb.co/0Ymv2Y9/2.jpg"
     ],
     "skills": [
-      "React",
       "Next JS",
       "TypeScript",
       "Redux",
       "TailwindCSS",
-      "Testing Library",
       "Django Rest Framework",
       "Celery",
-      "Redis",
       "Postgres",
       "Firebase",
-      "DigitalOcean",
-      "Vercel",
-      "Git",
-      "Nginx"
+      "DigitalOcean"
     ],
     "links": [
       {

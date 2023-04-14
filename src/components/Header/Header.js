@@ -33,13 +33,13 @@ const Header = () => {
                 >
                   Home
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                   to='/allprojects'
                   className='font-base link  link-underline link-underline-black pb-2 text-black'
                   style={({ isActive }) => (isActive ? activeStyle : {})}
                 >
                   All Projects
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                   to='/blogs'
                   className='font-base link  link-underline link-underline-black pb-2 text-black'
@@ -134,13 +134,13 @@ const Header = () => {
                 >
                   Home
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                   to='/allprojects'
                   className='border-brand-2 text-brand-2 hover:text-brand-2 block w-full border-b  px-3 py-3 text-base font-semibold hover:bg-white'
                   style={({ isActive }) => (isActive ? mobileActiveStyle : {})}
                 >
                   All Projects
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                   to='/blogs'
                   className='border-brand-2 text-brand-2 hover:text-brand-2 block w-full border-b  px-3 py-3 text-base font-semibold hover:bg-white'
