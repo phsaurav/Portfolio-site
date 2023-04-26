@@ -1,27 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { skillSet } from "../../utils/constants";
+import LinkedButton from "../LinkedButton/LinkedButton";
 
 const ProjectCard = ({ project }) => {
-    const { id, title, subtitle, images } = project;
-    return (
-        <div>
-            <Link to={`/project/${id}`}>
-                <div className='container mx-auto my-2 w-80 transform overflow-hidden bg-white shadow-lg  transition duration-500 ease-in-out hover:-translate-y-3 hover:shadow-xl md:w-96'>
-                    <div
-                        className='relative z-10'
-                        style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw))" }}
-                    >
-                        <div className='absolute inset-0 bg-black bg-opacity-20 transition duration-300 ease-in-out group-hover:opacity-75'></div>
-                        <img className='w-full hover:object-fill' src={images[0]} alt='' />
-                    </div>
-                    <div className='pt-3 pb-8 text-center text-gray-600'>
-                        <p className='font-base text-3xl'>{title}</p>
-                        <p className='truncate px-5 text-sm font-light'>{subtitle}</p>
-                    </div>
-                </div>
-            </Link>
+  const { title, subtitle, description, images, skills, links } = project;
+  return (
+    <div>
+      <div className='flex flex-col overflow-hidden lg:flex-row'>
+        <div
+          className=' border-brand-5 w-full border-l-2 bg-cover lg:w-1/2 lg:border-b-2'
+          style={{
+            backgroundImage: `url(${images[0]})`,
+            backgroundSize: "cover",
+            backgroundPosition: "top",
+            backgroundRepeat: "no-repeat",
+            height: "400px",
+          }}
+        ></div>
+        <div className='border-brand-5 border-left-2 flex w-full flex-col justify-between border-l-2 border-b-2 py-8 pl-5  text-center lg:w-1/2 lg:border-l-0 lg:text-left'>
+          <div>
+            <h1 className='text-brand-3 text-2xl font-bold md:text-3xl'>{title}</h1>
+            <p className='text-brand-3 text-xl lg:truncate'>{subtitle}</p>
+            <p className='text-brand-5 mt-2  text-sm xl:text-base '>{description}</p>
+          </div>
+
+          <div>
+            <div className='hidden flex-wrap gap-1 pt-2 opacity-80 transition duration-500 ease-in-out hover:opacity-100 md:flex xl:pt-5 '>
+              {skills.map((skill) => {
+                const skillData = skillSet.filter((item) => item.label === skill);
+                return (
+                  <div>
+                    <img
+                      src={skillData[0].img}
+                      style={{ height: "26px", paddingLeft: "1px", paddingRight: "1px" }}
+                      alt={skillData[0].label}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            <div className='mt-3 flex justify-center gap-3 lg:justify-start xl:mt-5'>
+              {links.map((link) => (
+                <LinkedButton link={link} />
+              ))}
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ProjectCard;

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "PR01",
+    "title": "Toptuber",
+    "subtitle": "An companion app for youtubers to improve and maintain youtube videos.",
+    "description": "Toptuber is a project dedicated to helping YouTubers to manage their channel and improve SEO on their videos. The backend was built with Django and the frontend with NextJs. It heavily uses youtube data API and analytics API to retrieve data about youtube channels, videos, and keywords and analyze them.",
+    "images": [
+      "https://i.ibb.co/DRGR53y/1.jpg",
+      "https://i.ibb.co/BwkG2Rg/3.jpg",
+      "https://i.ibb.co/NN4crFx/4.jpg"
+    ],
+    "skills": [
+      "Next JS",
+      "TypeScript",
+      "Redux",
+      "TailwindCSS",
+      "MUI",
+      "Testing Library",
+      "Django Rest Framework",
+      "Postgres",
+      "Firebase",
+      "DigitalOcean"
+    ],
+    "links": [
+      {
+        "Label": "Live Site",
+        "url": "https://web.toptuber.co/features"
+      }
+    ]
+  },
+  {
+    "id": "PR02",
+    "title": "SpecsSphere",
+    "subtitle": "Luxury sunglasses providing website",
+    "description": "SpecsSphere Exclusive Luxery Sunglass collection. We provide best exclusive luxery sunglass collection at your doorstep. An easy to use ecommerce layout with easy ordering process with sperate admin section for managing and maintaining orders",
+    "images": [
+      "https://i.ibb.co/fGdBnVt/specsphere-1080.png",
+      "https://i.ibb.co/YQztFmk/specsphere-2.png",
+      "https://i.ibb.co/Sdt9hrr/Specs-Sphere-3.png"
+    ],
+    "skills": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "TailwindCSS",
+      "NodeJS",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "Netlify"
+    ],
+    "links": [
+      {
+        "Label": "Live Site",
+        "url": "https://specssphere.netlify.app/"
+      },
+      {
+        "Label": "Git Repo",
+        "url": "https://github.com/phsaurav/SpecsSphere-Client"
+      }
+    ]
+  },
+  {
+    "id": "PR03",
+    "title": "SEO Tools App",
+    "subtitle": "A combination of tools designed to help YouTubers to boost their SEO.",
+    "description": "Seo tools are a combination of tools designed to help YouTubers to boost their SEO. It was a team project I worked on this project from the ground up. Starting from planning and research, Building both front and backend. Releasing the app on both IOS and Android. Analysing the growth and feedback including maintaining the app.",
+    "images": [
+      "https://i.ibb.co/H7Rp0F0/1.jpg",
+      "https://i.ibb.co/NjPj46Z/2.jpg",
+      "https://i.ibb.co/D8wpFVr/3.jpg"
+    ],
+    "skills": [
+      "Flutter",
+      "Riverpod",
+      "Mockito",
+      "Django Rest Framework",
+      "Celery",
+      "Postgres",
+      "Firebase",
+      "DigitalOcean"
+    ],
+    "links": [
+      {
+        "Label": "Play Store",
+        "url": "https://play.google.com/store/apps/details?id=com.toptuber.yt_seo_tools&hl=en&gl=US"
+      },
+      {
+        "Label": "App Store",
+        "url": "https://apps.apple.com/gb/app/seo-tools-boost-video-rank-tag/id1663712094?platform=iphone"
+      }
+    ]
+  },
+  {
+    "id": "PR04",
+    "title": "Tutor Karigor",
+    "subtitle": "A network for better tutor finding experience and tutor exposure.",
+    "description": "An web application that act as a network for tutor, guradian and tutor media's. This app will make the the tutor finding experience very easy for gurdian and tutor media. Also provide better exposure for tutors.",
+    "images": [
+      "https://i.ibb.co/DDwYWxj/1.jpg",
+      "https://i.ibb.co/yNn6Hv7/4.jpg",
+      "https://i.ibb.co/0Ymv2Y9/2.jpg"
+    ],
+    "skills": [
+      "Next JS",
+      "TypeScript",
+      "Redux",
+      "TailwindCSS",
+      "Django Rest Framework",
+      "Celery",
+      "Postgres",
+      "Firebase",
+      "DigitalOcean"
+    ],
+    "links": [
+      {
+        "Label": "Live Site",
+        "url": "http://tutor.karigor.tech"
+      }
+    ]
+  }
+]
