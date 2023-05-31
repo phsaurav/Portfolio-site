@@ -90,33 +90,5 @@
         "url": "https://apps.apple.com/gb/app/seo-tools-boost-video-rank-tag/id1663712094?platform=iphone"
       }
     ]
-  },
-  {
-    "id": "PR04",
-    "title": "Tutor Karigor",
-    "subtitle": "A network for better tutor finding experience and tutor exposure.",
-    "description": "An web application that act as a network for tutor, guradian and tutor media's. This app will make the the tutor finding experience very easy for gurdian and tutor media. Also provide better exposure for tutors.",
-    "images": [
-      "https://i.ibb.co/DDwYWxj/1.jpg",
-      "https://i.ibb.co/yNn6Hv7/4.jpg",
-      "https://i.ibb.co/0Ymv2Y9/2.jpg"
-    ],
-    "skills": [
-      "Next JS",
-      "TypeScript",
-      "Redux",
-      "TailwindCSS",
-      "Django Rest Framework",
-      "Celery",
-      "Postgres",
-      "Firebase",
-      "DigitalOcean"
-    ],
-    "links": [
-      {
-        "Label": "Live Site",
-        "url": "http://tutor.karigor.tech"
-      }
-    ]
   }
 ]
